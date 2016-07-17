@@ -1,0 +1,11 @@
+main {
+  max-width: 700px;
+  margin: auto;
+  background: linear-gradient(45deg, green, red);
+  min-height: 100px;
+  border-color: transparent;
+  display: flex; }
+
+body {
+  background: black;
+  min-height: 500px; }

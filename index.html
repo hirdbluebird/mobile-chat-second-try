@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>front-end test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="assets/cssmin/style.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/cssmin/normalize.css">
+</head>
+<body>
+	<main>
+		<section class="user-section">
+
+			<div class="user-profile">
+			
+				<div class="user-info-wrapper">
+					<div class="user-photo">
+						<img src="assets/img/user-photo.jpg" alt="">
+					</div>
+					<div class="user-info">
+						<p class="user-name">Вероника Ростова</p>
+						<p class="user-position">Менеджер по продажам</p>
+						<p class="user-status">Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны</p>
+					</div>
+				</div>
+
+				<div class="user-statistic">
+					<div class="statistic-header">
+						<span>Услуг</span>
+					</div>
+
+					<div class="statistic-strip-wrapper">
+						<div class="statistic-line">
+							<span>Ручное бронирование</span>
+							<div class="statistic-strip-count" style="width: 50%"></div>
+							<span class="count">11</span>
+						</div>
+						<div class="statistic-line">
+							<span>Пакетные туры</span>
+							<div class="statistic-strip-count" style="width: 15%"></div>
+							<span class="count">3</span>
+						</div>
+						<div class="statistic-line">
+							<span>Отели</span>
+							<div class="statistic-strip-count" style="width: 5%"></div>
+							<span class="count">1</span>
+						</div>
+					</div><!-- /.statistic-wrapper -->
+
+					<div class="statistic-total">
+						<span class="statistic-total-title">Всего</span>
+						<span class="count">15</span>
+					</div>
+
+				</div><!-- /.user-statistic -->
+			</div><!-- /.user-info-wrapper -->
+		</section>
+
+		<section class="comments-section">
+
+			<div class="comments-section-header">
+				<span class="comments-last">Последние отзывы</span>
+				<a href="" class="comments-all-link">Все отзывы</a>
+
+				<div class="comments-total-wrapper">
+					<a href="">
+						<img src="assets/img/comment.png" alt="">
+						<span>14</span>
+					</a>
+					<a href="">
+						<img src="assets/img/like.png" alt="">
+						<span>131</span>
+					</a>
+				</div><!-- /.comments-total-wrapper -->
+			</div><!-- /.comments-section__hedear -->
+
+			<div class="comments" id="comments">
+				<div class="comment">
+					<div class="comment-header">
+						<span class="username">Самуил</span>
+						<span class="comment-time">13 октября 2011</span> 
+					</div>
+					<div class="comment-body">
+						Привет, Верунь! ниче себе ты крутая. фотка класс!!!!
+					</div>
+				</div>
+
+				<div class="comment">
+					<div class="comment-header">
+						<span class="username">Лилия Семёновна</span>
+						<span class="comment-time">14 октября 2011</span> 
+					</div>
+					<div class="comment-body">
+						Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?
+					</div>
+				</div>
+
+				<div class="comment">
+					<div class="comment-header">
+						<span class="username">Лилия Семёновна</span>
+						<span class="comment-time">14 октября 2011</span> 
+					</div>
+					<div class="comment-body">
+						Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?
+					</div>
+				</div>
+			</div><!-- /.comments -->
+ 
+		</section><!-- /.comments-section -->
+	</main>
+
+	<div class="comment-form-wrapper">
+		<form action="" class="comment-form" method="">
+			<textarea id="textareaComment" onkeydown="textareaAddComment()"></textarea>
+			<button onclick="addComment()" type="button">Написать консультанту</button>
+		</form>
+	</div>
+
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

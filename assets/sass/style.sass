@@ -1,0 +1,193 @@
+@font-face
+	font-family: 'Arial'
+	src: url(../fonts/arial.ttf)
+body
+	font-family: 'Arial', sans-serif
+main
+	max-width: 720px
+	margin: auto
+	padding: 20px 20px
+.user-info-wrapper
+	position: relative
+	height: 160px
+	.user-photo
+		position: absolute
+		min-width: 100px
+		width: 22%
+		img 
+			width: 100%
+			border-radius: 50%
+.user-info
+	margin-left: 11%
+	display: flex
+	flex-direction: column
+	flex-wrap: no-wrap
+	justify-content: center
+	& > *
+		padding-left: 14%
+		margin: 0.6em 0px
+	.user-name
+		font-weight: bold
+		font-size: 1.3em
+	.user-position
+		color: #808080
+		font-size: 0.9em
+		margin: 0px
+	.user-status
+		text-align: justify
+		max-height: 1.95em
+		overflow: hidden
+		border: 1px solid #cecabf
+		border-radius: 4px
+		background-color: #fffbc8
+		padding: 5px 5px 5px 14%
+.user-statistic
+	padding-left: 24%
+	.statistic-header
+		border-bottom: 1px solid #ccc
+		margin-bottom: 1em
+		height: 1em
+		padding-bottom: 1em
+		span
+			width: 25%
+			float: right
+			text-align: center
+	.statistic-total
+		border-top: 1px solid #ccc
+		margin-top: 1em
+		font-weight: bold
+		padding: 1em 0em
+.statistic-strip-wrapper
+	position: relative
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		bottom: 0
+		width: 1px
+		background: rgba(0,0,0,0.3)
+	.statistic-line
+		position: relative
+		margin-top: 3px 
+		padding: 0.5em 0em
+		&:first-child
+			margin: 0px 0px 3px 0px
+			& .statistic-strip-count
+				background-color: #b1e19b
+		span:first-child
+			padding-left: 0.5em
+		.statistic-strip-count
+			position: absolute
+			top: 0
+			z-index: -1
+			height: 100%
+			background-color: #ace2f8
+			border-top-right-radius: 4px
+			border-bottom-right-radius: 4px
+			width: 30%
+.count
+	float: right
+	text-align: right
+	padding-right: 10%
+	width: 20%
+	line-height: 1em
+	font-weight: bold
+/************** COMMENTS SECTION ****************/
+.comments-section-header
+	.comments-last
+		font-size: 1.5em
+		font-weight: bold
+		margin-right: 5px
+	.comments-all-link
+		color: #3d77ae
+		text-decoration: none
+		border-bottom: 1px solid #3d77ae
+		padding-bottom: 3px
+	.comments-total-wrapper
+		float: right
+		a
+			display: inline-block
+			float: right
+			margin-top: 0.5em
+			text-decoration: none
+			margin-left: 0.7em
+			color: black
+			span
+				vertical-align: top
+.comment 
+	.comment-header
+		margin-top: 1em
+		.username
+			font-weight: bold
+		.comment-time
+			font-size: 0.9em
+			color: #808080
+			font-weight: normal
+			margin-left: 5px
+	.comment-body
+		position: relative
+		background: #f2fbff
+		margin-top: 15px
+		padding: 1em
+		border: 1px solid #cfcfcf
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			border-style: solid
+		&:after
+			border-width: 10px 0px 0px 10px
+			border-color: transparent transparent transparent #f2fbff
+			top: -10px
+			left: 26px
+		&:before
+			border-width: 12px 0px 0px 12px
+			border-color: transparent transparent transparent #cfcfcf
+			top: -12px
+			left: 25px
+.comment-form-wrapper
+	background: #f2fbff
+	padding: 2em 0em
+.comment-form
+	max-width: 720px
+	padding: 20px
+	margin: auto
+	textarea,
+	button
+		display: block
+	textarea
+		width: calc(100% - 4px)
+		padding: 2px
+		margin-bottom: 2em
+		height: 4em
+	button
+		width: 60%
+		margin: auto
+		border-radius: 2em/2em
+		background-color: #fdd639
+		color: #333333
+		font-weight: bold
+		border: none
+		padding: 1em 0em
+@media screen and (max-width: 610px)
+	body
+		font-size: 10px
+	.user-info-wrapper
+		height: 100px
+@media screen and (max-width: 500px)
+	main,
+	.comment-form
+		padding: 5px
+	.user-info
+		margin-left: 50px
+		& > *,
+		.user-status
+			padding-left: 55px
+	.user-statistic
+		padding-left: 105px
+
+
+
+
+
+

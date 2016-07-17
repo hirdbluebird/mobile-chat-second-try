@@ -1,0 +1,30 @@
+{
+  "name": "mobile-chat",
+  "version": "1.0.0",
+  "description": "mobile version of markup for mobile chat app ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirdbluebird/mobile-chat-second-try.git"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "hirdbluebird",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hirdbluebird/mobile_chat/issues"
+  },
+  "homepage": "https://github.com/hirdbluebird/mobile_chat#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2"
+  }
+}
